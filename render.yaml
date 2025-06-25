@@ -2,7 +2,7 @@ services:
   - type: web
     name: codveda-backend
     env: node
-    repo: https://github.com/yourusername/codveda-internship
+    repo: https://github.com/MohamedAmineGharsalli/codveda-internship.git
     branch: main
     rootDir: backend
     buildCommand: npm install

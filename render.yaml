@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: codveda-backend
+    env: node
+    repo: https://github.com/yourusername/codveda-internship
+    branch: main
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm run dev
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false 

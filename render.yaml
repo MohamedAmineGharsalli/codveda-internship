@@ -1,16 +1,15 @@
 services:
   - type: web
-    name: codveda-backend
+    name: codveda-internship-backend
     env: node
-    repo: https://github.com/MohamedAmineGharsalli/codveda-internship.git
-    branch: main
+    plan: free
+    region: oregon
     rootDir: backend
     buildCommand: npm install
-    startCommand: npm run dev
+    startCommand: node index.js
     envVars:
-      - key: PORT
-        value: 10000
       - key: MONGO_URI
-        sync: false
+        value: mongodb://localhost:27017/codveda
       - key: JWT_SECRET
-        sync: false 
+        value: codveda_internship_secret_key_2024
+
